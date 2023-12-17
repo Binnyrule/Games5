@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Sacramento&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap" rel="stylesheet">
+    <title>Games 5</title>
+    <style type="text/css">
+      *{
+      border:0;
+      padding:0;
+      }
+      
+      body{
+      margin:0;
+      }
+      
+      hr{
+      border-top:1.2vw dotted lightgrey;
+      width:10%;
+      margin:7.5% auto;
+      }
+      
+      .navbar{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      height:40px;
+      padding:2.5% 5%;
+      padding-right:10%;
+      background-color:#a4f4fb;
+      }
+      
+      .logo{
+      text-decoration:none;
+      color:#239a9e;
+      font-size:5vw;
+      font-family: 'Gochi Hand', cursive;
+      }
+      
+      .navbar ul{
+      display:flex;
+      list-style:none;
+      }
+      
+      .list li{
+      font-family: 'Roboto Mono', monospace;
+      margin:5%;
+      margin-right:10px;  
+      }
+      
+      .list li a{
+      text-decoration:none;
+      color:white;
+      font-size:3.5vw;
+      }
+      
+      .h1y{
+      margin:0;
+      padding-top:12%;
+      font-family: 'Sacramento', cursive;
+      font-size:10vw;
+      }
+      
+      
+      .blk1{
+      color:#33c7d6;
+      justify-content:space-between;  
+      padding:5%;
+      background-image: linear-gradient(to bottom,#a6f4fb,white,#a6f4fb,white,#a6f4fb,white);
+      }
+    
+      .blk2{
+      color:black;
+      text-align:;
+      display:flex;
+      justify-content:space-between;
+        margin-bottom:8%;
+      }
+      
+      .cld1{
+      width:20%;
+      position:absolute;
+      right:10%;
+      }
+      
+      .cld2{
+      width:15%;
+      position:relative;
+      right:40%;
+      }
+      
+      .mntn{
+      width:100%;
+      }
+      
+      .pone{
+      margin:0;
+      font-family: 'Roboto Mono', monospace;
+      font-size:3.5vw;
+      margin:0 auto 0 auto;
+      }
+      
+      .parent{
+      background-image:linear-gradient(to bottom,white,#a6f4fb);
+      text-align:center;
+      }
+      
+      .child0{
+      text-align:center;
+      width:50%;
+      margin:0 auto;
+      }
+      
+      .child0 img{
+      width:13vw;
+      }
+      
+      .child0 h4{
+      margin:.75vw auto;
+      font-size:10vw;
+      color:#33c7d6;
+      font-family: 'Sacramento', cursive;
+      }
+      
+      .child0 p{
+      font-size:10vw;
+      line-height:2.75vw;
+      }
+      
+      .parent h2{
+      text-align:center;
+      color:#33c7d6;
+      font-family: 'Sacramento', cursive;
+      font-size:5vw;
+      margin-top:8%;
+      }
+      
+      .child1{
+      margin:10% 3vw 3vw 3vw;
+      }
+      
+      .child1 img{
+      width:25%;
+      margin-left:12.5%;
+      margin-top:1.5vw;
+      margin-right:3vw;
+      border-radius:40%;
+      float:left;
+      }
+      
+      .child1 div{
+      width:60%;
+      text-align:center;
+      margin:0 auto 0 auto;
+      font-size:1.25vw;
+      line-height:1.8vw;
+      }
+      
+      .child1 p{
+      margin:0;
+      margin-top:1.5vw;
+      }
+      
+      .child1 h4{
+      margin:0;
+      font-size:2vw;
+      font-family: 'Roboto Mono', monospace;
+      color:#33c7d6;
+      }
+      
+      .child2{
+      margin:10% 3vw 3vw 3vw;
+      }
+      
+      .child2 img{
+      width:25%;
+      margin-left:3vw;
+      margin-top:1.5vw;
+      margin-right:17.5%;
+      border-radius:40%;
+      float:right;
+      }
+      
+      .child2 div{
+      width:60%;
+      text-align:center;
+      margin:0 12.5%;
+      font-size:1.25vw;
+      line-height:1.8vw;
+      }
+      
+      .child2 p{
+      margin:0;
+      margin-top:1.5vw;
+      }
+      
+      .child2 h4{
+      margin:0;
+      font-family: 'Roboto Mono', monospace;
+      font-size:2vw;
+      color:#33c7d6;
+      }
+      
+      .bttn {
+      background: #11cdd4;
+      background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+      background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+      background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+      background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+      background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+      -webkit-border-radius: 8;
+      -moz-border-radius: 8;
+      border-radius: 8px;
+      font-family: 'Montserrat', sans-serif;
+      color: #ffffff;
+      font-size: 2vw;
+      padding: 1vw 2vw;
+      text-decoration: none;
+      }
+      
+      .bttn:hover {
+      background: #6ddcde;
+      background-image: -webkit-linear-gradient(top, , #2bc4ad);
+      background-image: -moz-linear-gradient(top, #6ddcde, #2bc4ad);
+      background-image: -ms-linear-gradient(top, #6ddcde, #2bc4ad);
+      background-image: -o-linear-gradient(top, #6ddcde, #2bc4ad);
+      background-image: linear-gradient(to bottom, #6ddcde , #2bc4ad);
+      text-decoration: none;
+      }
+      
+      .btc{
+      margin-bottom:0;
+      margin-top:5%;
+      padding-top:2.5%;
+      background-color:#33c7d6;
+      text-align:center;
+      }
+      
+      .btc a{
+      text-decoration:none;
+      color:#a6f4fb;
+      font-size:3vw;
+      margin:0 2%;
+      }
+      
+      .btc p{
+      color:white;
+      font-size:.75vw;
+      margin-bottom:0;
+      padding-bottom:1.5%;
+      padding-top:1%;
+      }
+    
+             .search-bar {
+            text-align: center;
+            padding: 20px;
+            background-color:#a4f4fb;
+        }
+
+        input[type=text] {
+            width: 70%;
+            padding: 8px;
+            margin: 0px 0;
+            box-sizing: border-box;
+        }
+
+        input[type=submit] {
+            background-color:#33c7d6;
+            color: white;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color:#6ddcde;
+        }
+    
+        .left-side {
+            width: 47%;
+            background-color: white;
+            padding-top:% ;
+          padding-bottom:%;
+          border:1px solid grey;
+          border-radius:5px;
+        }
+
+        .right-side {
+            width: 47%;
+            background-color: white;
+            padding-right:% ;
+          padding-bottom:;
+          border:1px solid grey;
+          border-radius:5px;
+        }
+    
+        h3{
+          margin:6%;
+        }
+    
+        .cclass{
+          width:100%;
+          border-radius:5px 5px 0 0;
+        }
+    
+       .free{
+         font-size:10px;
+         margin:7%;
+         color:#787878;
+       }
+    
+       .rp{
+         font-size:12px;
+         margin:7%;
+         margin-right:0;
+         margin-bottom:0;
+       }
+    
+       .price{
+         font-weight:500;
+         font-size:20px;
+         margin:0;
+         margin-top:10px;
+       }
+    
+       .mrp{
+         font-size:10px;
+         font-weight:200;
+         margin-top:11%;
+         margin-left:8%;
+         text-decoration:line-through;
+       }
+    
+    .cart{
+      text-align: center;
+            
+    }
+    
+
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <a class="logo" href="#" >games 5</a>
+      <ul class="list">
+        <li><a href="#about" >Cart</a></li>
+        <li><a href="#skill" >Menu</a></li>
+        <li><a href="#contact" >Profile</a></li>
+      </ul>
+    </div>
+    
+    <div class="search-bar">
+    <input type="text" placeholder="Search...">
+    <input type="submit" value="Search">
+    </div>
+
+    <div class="blk1">
+    <div class="blk2">
+      
+      <div class="left-side">
+        <img class="cclass" src="./spider.png" alt="spider">
+        <h3>Spider Man 2 Standard Edn PS5</h3>
+        <div style="display:flex;">
+          <p class="rp">₹</p>
+          <p class="price">4,399</p>
+          <p class="mrp">M.R.P. : ₹4,999</p>
+        </div>
+        
+        <div class="cart">
+          <input type="submit" value="Add to cart">
+        </div>
+        <p class="free">Free Delivery by Games 5</p>
+     </div>
+
+     <div class="right-side">
+        <img class="cclass" src="./2k23.png" alt="smm">
+        <h3>Take 2 WWE 2K23 Standard Edn PS5</h3>
+        <div style="display:flex;">
+          <p class="rp">₹</p>
+          <p class="price">2,945</p>
+          <p class="mrp">M.R.P. : ₹4,999</p>
+        </div>
+       
+        <div class="cart">
+          <input type="submit" value="Add to cart">
+        </div>
+        <p class="free">Free Delivery by Games 5</p>
+     
+     </div>
+      
+    </div>
+    
+         <div class="blk2">
+      
+      <div class="left-side">
+        <img class="cclass" src="./fifa.png" alt="cmw">
+        <h3>FIFA 22 Standard Edn PS5</h3><br>
+        <div style="display:flex;">
+          <p class="rp">₹</p>
+          <p class="price">1,249</p>
+          <p class="mrp">M.R.P. : ₹1,499</p>
+        </div>
+       
+        <div class="cart">
+          <input type="submit" value="Add to cart">
+        </div>
+        <p class="free">Free Delivery by Games 5</p>
+     
+     </div>
+
+     <div class="right-side">
+       <img class="cclass" src="./farc.png" alt="2k23">
+        <h3>UBI Soft Far Cry 6 Standard Edn PS5</h3><br>
+       <div style="display:flex;">
+          <p class="rp">₹</p>
+          <p class="price">1,744</p>
+          <p class="mrp">M.R.P. : ₹1,799</p>
+        </div>
+       
+        <div class="cart">
+          <input type="submit" value="Add to cart">
+        </div>
+        <p class="free">Free Delivery by Games 5</p>
+     
+     </div>
+      
+    </div>
+      
+        <div class="blk2">
+      
+      <div class="left-side">
+        <img class="cclass" src="./cmw.png" alt="cmw">
+        <h3>Call Of Duty: Mordern Warfare III PS5</h3><br>
+        <div style="display:flex;">
+          <p class="rp">₹</p>
+          <p class="price">6,302</p>
+          <p class="mrp">M.R.P. : ₹7,699</p>
+        </div>
+       
+        <div class="cart">
+          <input type="submit" value="Add to cart">
+        </div>
+        <p class="free">Free Delivery by Games 5</p>
+     
+     </div>
+
+     <div class="right-side">
+       <img class="cclass" src="./smm.png" alt="2k23">
+        <h3>Sony Marvel's Spiderman: Miles Morals PS5'</h3>
+       <div style="display:flex;">
+          <p class="rp">₹</p>
+          <p class="price">1,999</p>
+          <p class="mrp">M.R.P. : ₹3,999</p>
+        </div>
+       
+        <div class="cart">
+          <input type="submit" value="Add to cart">
+        </div>
+        <p class="free">Free Delivery by Games 5</p>
+     
+             </div>
+      
+    </div>
+      
+    <div class="blk2">
+      
+      <div class="left-side">
+        <img class="cclass" src="./gta.png">
+        <h3>Rockstar Games PS5 Grand Theft Auto 5</h3>
+        <div style="display:flex;">
+          <p class="rp">₹</p>
+          <p class="price">2,099</p>
+          <p class="mrp">M.R.P. : ₹2,499</p>
+        </div>
+       
+        <div class="cart">
+          <input type="submit" value="Add to cart">
+        </div>
+        <p class="free">Free Delivery by Games 5</p>
+     
+     </div>
+
+     <div class="right-side">
+       <img class="cclass" src="./fc24.png">
+        <h3>EA Sports FC24 Stqndard Edn PS5</h3>
+       <div style="display:flex;">
+          <p class="rp">₹</p>
+          <p class="price">4,199</p>
+          <p class="mrp">M.R.P. : ₹4,799</p>
+        </div>
+       
+        <div class="cart">
+          <input type="submit" value="Add to cart">
+        </div>
+        <p class="free">Free Delivery by Games 5</p>
+     
+     </div>
+     </div>
+      
+        <div class="blk2">
+      
+      <div class="left-side">
+        <img class="cclass" src="./ghost.png">
+        <h3>Sony Ghost Of Tsushima | Director's Cut | PS5</h3>
+          <div style="display:flex;">
+          <p class="rp">₹</p>
+          <p class="price">2,449</p>
+          <p class="mrp">M.R.P. : ₹4,999</p>
+        </div>
+       
+        <div class="cart">
+          <input type="submit" value="Add to cart">
+        </div>
+        <p class="free">Free Delivery by Games 5</p>
+     
+     </div>
+
+     <div class="right-side">
+       <img class="cclass" src="./unc.png">
+        <h3>Uncharted: Legacy of Thieves Collection PS5</h3>
+          <div style="display:flex;">
+          <p class="rp">₹</p>
+          <p class="price">1,499</p>
+          <p class="mrp">M.R.P. : ₹2,999</p>
+        </div>
+       
+        <div class="cart">
+          <input type="submit" value="Add to cart">
+        </div>
+        <p class="free">Free Delivery by Games 5</p>
+     
+     </div>
+     </div>
+      
+    </div>
+    
+      <div class="child0">
+        <h4 style="font-family: 'Roboto Mono', monospace;font-size:4vw;">Query?</h4>
+        <p style="margin:5%;font-size:3vw;">Contact us with the mail below</p>
+        <a class="bttn" href="mailto:yashrajtilwani73099@gmail.com" >Mail us</a>
+      </div>
+      
+      <div class="btc">
+      <a href="https://twitter.com/TilwaniYashraj?t=zPsCvq3pUc0zbOSixUKy0w&s=09" >Twitter</a>
+      <a href="https://www.linkedin.com/in/yashraj-tilwani-7b8005251" >Linkedin</a>
+      <a href="https://instagram.com/yashrajtilwani?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D" >Instagram</a>
+      <p class="copyright">© 2023 Yash @ landing page</p>
+      </div>
+    </div>  
+  </body>
+</html>
